@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <nav>
+        <marquee behavior="alternate" direction="right" Scrollamount="6" hspace="30%"> Time is Life</marquee>
+        <span class="ctime">
+           <div id=t>time</div>
+        </span>
+    </nav>
+
+    <section class=holder>
+        <section class="body">
+            <span class="title">Timer</span>
+
+            <div class="text">
+                <div><label for="">Hours</label>
+                    <input type="number" value="0" id="setHr" placeholder="hour" class="in">
+                </div>
+                <span>:</span>
+                <div>
+                    <label for="">Minutes</label>
+                    <input type="number" max=59 min=0 value="0" id="setMin" placeholder="minutes" class="in">
+                </div>
+                <span>:</span>
+                <div>
+                    <label for="">Seconds</label>
+                    <input type="number" value="0" max=59 min=0 src="" id="setSec" placeholder="seconds" class="in">
+                </div>
+            </div>
+            <div class="time">
+                <div class="hour">
+                    <p id="shr">00</p>
+                    <span> : </span>
+                </div>
+                <div class="hour">
+                    <p id="smis">00</p>
+                    <span> : </span>
+                </div>
+                <div class="hour">
+                    <p id="ssec">00</p>
+                    <span> . </span>
+                </div>
+                <div class="hour">
+                    <span id="sml">100</span>
+                </div>
+            </div>
+            <div class="btn"><button class="bout" onclick="start()">Start</button>
+                <button onclick="pause()" class="bout">Pause</button>
+                <button class="bout" onclick="quit()">Stop</button>
+
+            </div>
+
+        </section>
+        <section class="body">
+            <span class="title">Stop Watch</span>
+            <div class="time">
+                <div class="hour">
+                    <p id="hr">00</p>
+                    <span> : </span>
+                </div>
+                <div class="hour">
+                    <p id="mis">00</p>
+                    <span> : </span>
+                </div>
+                <div class="hour">
+                    <p id="s">00</p>
+                    <span> . </span>
+                </div>
+                <div class="hour">
+                    <p id="ml">00</p>
+                </div>
+            </div>
+            <div class="btn">
+                <button onclick="count()" class="bout">Start <i class="fa fa-play" aria-hidden="true"></i></button>
+                <button onclick="pause()" class="bout">Pause</button>
+                <button onclick="stop()" class="bout">Stop</button>
+            </div>
+
+        </section>
+
+    </section>
+</body>
+<script src="script.js">
+</script>
+
+</html>
